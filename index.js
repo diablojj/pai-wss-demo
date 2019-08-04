@@ -5,7 +5,7 @@ const server = require("http").Server(app.callback());
 let socketio = require("socket.io")(server);
 
 const routers = require("./routes/index");
-app.use(routers.routes());
+app.use(routers.routes());123123123
 
 let ws = socketio.of("/ws");
 ws.on("connect", socket => {
