@@ -13,7 +13,7 @@ ws.on("connect", socket => {
   let count = 0;
 
   socket.on("messagePing", data => {
-    count++;
+    count += 2;
     socket.emit("messagePong", "receive " + count + " ping(s), response pong");
   });
 
